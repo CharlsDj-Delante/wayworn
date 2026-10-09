@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Wayworn",
+            "type": "process",
+            "command": "C:/raylib/w64devkit/bin/mingw32-make.exe",
+            "args": [
+                "RAYLIB_PATH=C:/raylib/raylib",
+                "PROJECT_NAME=game",
+                "OBJS=src/*.cpp",
+                "BUILD_MODE=DEBUG"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/raylib-vscode-template-main/raylib-vscode-template-main"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

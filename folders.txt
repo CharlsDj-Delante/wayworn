@@ -1,0 +1,48 @@
+The exact names of files and folders depend heavily on the game engine being used, but almost all modern games follow a very similar, predictable blueprint.
+Here are the most common folder structures and file names you will find, both during development and inside your installed game directory:
+## 1. The Core Folders (Asset Categories)
+Inside the main project folder, developers organize things by the type of asset:
+
+| Folder Name | What It Contains | Common File Extensions |
+|---|---|---|
+| Assets / Content | The main root folder where all game elements live. | N/A (Root folder) |
+| Audio / Sound / SFX | Background music, voice acting, and ambient sound effects. | .wav, .mp3, .ogg |
+| Models / Meshes | The 3D shapes of characters, weapons, buildings, and rocks. | .fbx, .obj, .blend |
+| Textures / Images | The "paint" or surfaces wrapped around the 3D models. | .png, .jpg, .tga, .dds |
+| Scripts / Source | The actual code that runs the game logic and mechanics. | .cs (C#), .cpp (C++), .py (Python), .gd (Godot) |
+| Scenes / Levels / Maps | The data that remembers where every object is placed in a level. | .unity, .umap, .tscn |
+| Prefabs / Blueprints | Pre-made templates of objects (e.g., a "basic enemy" with code and art attached). | .prefab, .uasset |
+| UI / HUD | Health bars, main menus, maps, and crosshairs. | .png, .json, .xml |
+
+------------------------------
+## 2. Standard Industry Examples
+Depending on how you are looking at the game, you will see a few specific standard setups:
+## If you are looking at a finished, installed game (PC):
+When a game is published, the developers hide these folders inside compressed archives so players don't accidentally break them. You will usually see:
+
+* 
+* GameName.exe – The main executable file that launches the game.
+* Engine.dll / UnityPlayer.dll – Core engine files that tell the game how to talk to your computer hardware.
+* Data/ or Content/ – A folder packed with giant archive files (like Data.pak, Assets.car, or resources.assets). These are the single-file containers that hold thousands of the folders listed above.
+* 
+
+## If you are making a game in Unity:
+Unity generates a strict, automated folder structure when you open a project:
+
+* 
+* Assets/ – Where you manually put your art, code, and sound.
+* Library/ – Cache files that Unity generates automatically to process your art (never touch this folder!).
+* ProjectSettings/ – Remembers your graphics settings, button inputs, and game resolution.
+* 
+
+## If you are making a game in Unreal Engine:
+Unreal uses a slightly different naming convention:
+
+* 
+* Config/ – Game settings and engine variables.
+* Content/ – Equivalent to Unity's Assets folder (holds all your 3D models and Blueprints).
+* Source/ – Holds raw C++ code if you aren't just using visual scripting.
+* 
+
+Are you trying to find specific files to mod a game you love, or are you trying to structure a project for a game you are building? Let me know the engine or game name, and I can give you the exact layout.
+
